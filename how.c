@@ -7,7 +7,7 @@ int main(void) {
 	int t;
 	int score = 0;
 
-	while (true)
+	while(1)
 	{
 		int numbs = rand() % 10 + 1;
 		int cumb = rand() % 10 + 1;
@@ -20,10 +20,10 @@ int main(void) {
 		if (t == answer)
 		{
 			score += 1;
-			printf("You are right! Current Streak: %d \n", score);
+			printf("You are right! Current Streak: %d\n", score);
 		} 
 		else {
-			return printf("No the answer is %d \nTry again by opening the exe again", answer);
+			return printf("No the answer is %d\nTry again by opening the exe again", answer);
 		}
 		
 	}
