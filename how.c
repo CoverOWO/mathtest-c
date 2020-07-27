@@ -6,11 +6,11 @@ int main(void) {
 	int score = 0;
 
 	while(1) {
-		int numbs = rand() % 10 + 1;
-		int cumb = rand() % 10 + 1;
-		int answer = numbs + cumb;
+		int numbs = rand() % 20 + 1;
+		int cumb = rand() % 20 + 1;
+		int answer = numbs * cumb;
 
-		printf("%d + %d = ", numbs, cumb);
+		printf("%d * %d = ", numbs, cumb);
 
 		scanf("%d", &t);
 
@@ -19,7 +19,7 @@ int main(void) {
 			printf("You are right! Current Streak: %d\n", score);
 		}
 		else {
-			printf("No the answer is %d\nTry again by opening the exe again", answer);
+			return printf("No the answer is %d\nTry again by opening the exe again", answer);
 		}
 	}
 
