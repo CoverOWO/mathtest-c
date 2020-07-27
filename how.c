@@ -4,8 +4,6 @@
 
 int main(void) {
 
-	srand(time(NULL));
-
 	int l = 1;
 	int t;
 	int score = 0;
