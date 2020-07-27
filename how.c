@@ -8,7 +8,6 @@ int main(void) {
 
 	int l = 1;
 	int t;
-	int a;
 
 	while (l < 2)
 	{
