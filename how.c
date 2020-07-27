@@ -8,12 +8,18 @@ int main() {
 
 	int numbs = rand();
 	int cumb = rand();
+	int answer = numbs + cumb;
 	int t;
 
 	printf(" %d + %d = ", numbs, cumb);
 	
 	scanf("%d", &t);
 
-	return 0;
+	if (t == answer)
+	{
+		return printf("You are right!");
+	} 
+
+	return printf("No the answer is %d", answer);
 
 }

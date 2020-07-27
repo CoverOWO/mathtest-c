@@ -8,3 +8,4 @@ char chr[MAX_LIMIT]
 // makes it so u can have more then 1 charater in this string (line 10)
 ```
 // gcc how.c is how to compile program O_O
+// %d is how we can put a number for print and strings etc
