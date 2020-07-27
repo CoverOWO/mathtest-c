@@ -2,24 +2,31 @@
 # include <stdlib.h>
 # include <time.h> 
 
-int main() {
+int main(void) {
 
-	srand(time(0));
+	srand(time(NULL));
 
-	int numbs = rand();
-	int cumb = rand();
+	int numbs = rand() % 10 + 1;
+	int cumb = rand() % 10 + 1;
 	int answer = numbs + cumb;
+	int l = 1;
 	int t;
 
-	printf(" %d + %d = ", numbs, cumb);
-	
-	scanf("%d", &t);
-
-	if (t == answer)
+	while (l < 2)
 	{
-		return printf("You are right!");
-	} 
+		printf(" %d + %d = ", numbs, cumb);
+	
+		scanf("%d", &t);
 
-	return printf("No the answer is %d", answer);
-
+		if (t == answer)
+		{
+			printf("You are right! \n");
+		} 
+		else {
+			printf("No the answer is %d \n", answer);
+		}
+		
+	}
+	
+	return 0;
 }
