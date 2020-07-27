@@ -6,15 +6,17 @@ int main(void) {
 
 	srand(time(NULL));
 
-	int numbs = rand() % 10 + 1;
-	int cumb = rand() % 10 + 1;
-	int answer = numbs + cumb;
 	int l = 1;
 	int t;
+	int a;
 
 	while (l < 2)
 	{
-		printf(" %d + %d = ", numbs, cumb);
+		int numbs = rand() % 10 + 1;
+		int cumb = rand() % 10 + 1;
+		int answer = numbs + cumb;
+
+		printf("%d + %d = ", numbs, cumb);
 	
 		scanf("%d", &t);
 
@@ -23,10 +25,9 @@ int main(void) {
 			printf("You are right! \n");
 		} 
 		else {
-			printf("No the answer is %d \n", answer);
+			return printf("No the answer is %d \nTry again by opening the exe again", answer);
 		}
 		
 	}
-	
-	return 0;
+
 }
