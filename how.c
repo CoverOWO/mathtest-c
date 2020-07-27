@@ -4,11 +4,10 @@
 
 int main(void) {
 
-	int l = 1;
 	int t;
 	int score = 0;
 
-	while (l < 2)
+	while (true)
 	{
 		int numbs = rand() % 10 + 1;
 		int cumb = rand() % 10 + 1;
