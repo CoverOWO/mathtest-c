@@ -8,6 +8,7 @@ int main(void) {
 
 	int l = 1;
 	int t;
+	int score = 0;
 
 	while (l < 2)
 	{
@@ -21,7 +22,8 @@ int main(void) {
 
 		if (t == answer)
 		{
-			printf("You are right! \n");
+			score += 1;
+			printf("You are right! Current Streak: %d \n", score);
 		} 
 		else {
 			return printf("No the answer is %d \nTry again by opening the exe again", answer);
